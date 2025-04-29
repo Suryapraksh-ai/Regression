@@ -1,4 +1,4 @@
-# Regression
+
 🧠 Customer Churn Prediction using Artificial Neural Network (ANN)
 🔍 Project Overview
 This project is a practical implementation of a binary classification problem using an Artificial Neural Network (ANN) built with TensorFlow and Keras. The goal is to predict whether a customer will churn (exit) from a bank, based on various features like credit score, geography, age, balance, and more.
