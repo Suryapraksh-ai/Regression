@@ -87,3 +87,75 @@ Accuracy Score: Printed using accuracy_score from sklearn
 
 ✔️ Model successfully classifies customer churn with good accuracy using only structured tabular data.
 
+#POLYNOMIAL
+📈 Polynomial vs Linear Regression: Salary Prediction
+🔍 Project Overview
+This project demonstrates the difference between Linear Regression and Polynomial Regression using a simple but realistic dataset — employee position levels vs. salaries. It clearly shows how polynomial models can better capture non-linear relationships in data, especially when predicting real-world salary trends.
+
+📊 Dataset Overview
+The dataset contains the following columns:
+
+Position: Job title (e.g., Jr Software Engineer, Manager)
+
+Level: Numerical level (used for prediction)
+
+Salary: Corresponding salary value
+
+
+Position	Level	Salary
+Jr Software Engineer	1	45,000
+Sr Software Engineer	2	50,000
+Team Lead	3	60,000
+Manager	4	80,000
+Sr Manager	5	110,000
+...	...	...
+CEO	10	1,000,000
+🛠️ Tech Stack
+Python 3
+
+Pandas and NumPy for data manipulation
+
+Matplotlib for data visualization
+
+Scikit-learn for both regression models
+
+📈 Model Implementation
+✅ Linear Regression
+Assumes a straight-line relationship between level and salary
+
+Model trained using LinearRegression()
+
+Prediction for level 6.5: $330,378
+
+✅ Polynomial Regression (Degree = 2 by default)
+Captures curvature in data more effectively
+
+Transforms features using PolynomialFeatures
+
+Trained using LinearRegression() on the polynomial features
+
+Prediction for level 6.5: $189,498
+
+📉 Visualization
+🔵 Linear Regression
+
+🔷 Polynomial Regression
+
+🚨 Note: In this case, Polynomial Regression gives a more realistic prediction, as the salary vs. level relationship is not linear.
+
+🤔 Why This Matters
+Demonstrates underfitting vs. better fit
+
+Shows practical usage of PolynomialFeatures
+
+Highlights how simple feature engineering can dramatically improve predictions
+
+💡 Use Cases
+Salary forecasting
+
+Career-level compensation planning
+
+Understanding model bias vs. variance trade-offs
+
+
+
